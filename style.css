@@ -1,0 +1,1001 @@
+body {
+	transition: background-color .5s;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+#fb {
+	width: 25%;
+	height: auto;
+	margin-top: -4.5rem;
+}
+
+.sidenav {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: rgb(84,83,82);
+	overflow-x: hidden;
+	transition: 0.5s;
+	padding-top: 6rem;
+}
+
+.sidenav a {
+	font-size: 2rem;
+	padding: 1rem 1rem 1rem 3rem;
+	text-decoration: none;
+	color: white;
+	display: block;
+	transition: 0.3s;
+	font-family: Lato;
+}
+
+.sidenav a:hover {
+	color: rgb(163,5,17);
+	text-decoration: none;
+}
+
+.closebtn {
+	position: absolute;
+	top: 0;
+	right: 2rem;
+	margin-left: 5rem;
+}
+
+#main {
+	padding: 1rem;
+}
+
+.dropdown-btn {
+	font-size: 2rem;
+	padding: 1rem 1rem 1rem 3rem;
+	text-decoration: none;
+	color: white;
+	display: block;
+	border: none;
+	background: none;
+	text-align: left;
+	cursor: pointer;
+	font-family: Lato;
+}
+
+.dropdown-container a {
+	font-family: Lato;
+	color: lightgrey;
+	font-size: 1.5rem;
+}
+
+.dropdown-btn:hover {
+	color: rgb(163,5,17);
+}
+
+.dropdown-container a:hover {
+	color: rgb(136,195,23);
+}
+
+.dropdown-container {
+	display: none;
+}
+
+#logo {
+	height: auto;
+	width: 20%;
+	margin: -4rem 0 0 35rem;
+}
+
+#veld, #veld1 {
+	position: relative;
+	margin-top: 2rem;
+}
+
+#center {
+	position: absolute;
+	top: 2.5rem;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 7%;
+}
+
+#centertext {
+	font-family: Lato;
+	color: white;
+	position: absolute;
+	top: 6rem;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 2rem;
+}
+
+img {
+	width: 100%;
+	height: auto;
+}
+
+#knop {
+	background-color: rgb(163,5,17);
+	border: none;
+	padding: 1rem 1rem;
+	position: absolute;
+	top: 10rem;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#knop a {
+	font-family: Lato;
+	font-size: 1rem;
+	color: white;
+	text-decoration: none;
+}
+
+.titels, .titels2 {
+	font-family: Lato;
+	margin-top: 3rem;
+	text-align: center;
+	font-size: 2rem;
+}
+
+.titels1 {
+	font-family: Lato;
+	margin-top: 2rem;
+	text-align: center;
+	font-size: 2rem;
+	margin-bottom: 2rem;
+}
+
+.column {
+	font-family: Lato;
+	margin: 2rem 0 0 2rem;
+	float: left;
+	width: 29%;
+	line-height: 1.6;
+}
+
+#vlak {
+	background-color: rgb(136,195,23);
+	width: 100%;
+	height: 30rem;
+	margin-top: 16rem;
+}
+
+#vl {
+	background-color: white;
+	width: 100%;
+	height: 2rem;
+	margin-top: 23rem;
+}
+
+.gallery {
+	margin-top: 3rem;
+}
+
+.gallery img {
+	width: 100%;
+	height: auto;
+}
+
+.desc {
+	font-family: Lato;
+	font-size: 1rem;
+	line-height: 1.6;
+	padding: 1.5rem;
+	text-align: center;
+	background-color: white;
+}
+
+.responsive {
+	padding: 0 1rem;
+	float: left;
+	width: 30%;
+	margin-left: 1rem;
+}
+
+.mySlides {
+	display: none
+}
+
+.slideshow-container {
+	max-width: 100%;
+	position: relative;
+	margin: 6rem auto 0;
+}
+
+.prev, .next {
+	cursor: pointer;
+	position: absolute;
+	top: 40%;
+	width: auto;
+	padding: 1rem;
+	color: white;
+	font-weight: bold;
+	font-size: 2rem;
+	transition: 0.6s ease;
+}
+
+.next {
+	right: 0;
+}
+
+.prev:hover, .next:hover {
+	background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+	font-family: Lato;
+	background-color: white;
+	color: black;
+	font-size: 1.3rem;
+	padding: 0.8rem 1rem;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	border-width: 0 1px 1px;
+	border-color: black;
+	border-style: solid;
+}
+
+.dag {
+	font-family: Lato;
+	color: white;
+	font-size: 1.5rem;
+	padding: 1rem 1rem;
+	position: absolute;
+	top: 0;
+}
+
+.fade {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+	from {
+		opacity: .4
+	}
+	to {
+		opacity: 1
+	}
+}
+
+@keyframes fade {
+	from {
+		opacity: .4
+	}
+	to {
+		opacity: 1
+	}
+}
+
+.w3-content img {
+	margin: 3rem auto 3rem;
+	border: 2px solid rgb(136,195,23);
+}
+
+#column1, #column2, #column3, #column4, #column5, #column6, #column7, #column8, #column9, #column10, #column11, #column12, #column13, #column14 {
+	margin: 3rem 0 0 1rem;
+	font-size: 0.9rem;
+	font-family: Lato;
+	line-height: 1.6;
+}
+
+#column2, #column10, #column14 {
+	margin: 2rem 0 0 3rem;
+}
+
+#column5, #column6, #column12, #column13 {
+	margin: 2rem 3rem 0 0;
+}
+
+#column3, #column11 {
+	margin-top: 2rem;
+}
+
+#column9 {
+	margin-top: 5rem;
+}
+
+#klein1, #klein5 {
+	padding-left: 1rem;
+	margin-right: 1rem;
+	float: right;
+	width: 17rem;
+	height: auto;
+}
+
+#klein2, #klein6 {
+	float: left;
+	width: 17rem;
+	height: auto;
+	padding-right: 1rem;
+}
+
+#klein7, #klein8, #klein9 {
+	visibility: hidden;
+	width: 2%;
+}
+
+#klein3 {
+	padding-left: 1rem;
+	margin-right: 1rem;
+	float: right;
+	width: 12rem;
+	height: auto;
+}
+
+#klein4 {
+	float: left;
+	width: 12rem;
+	height: auto;
+	padding-right: 1rem;
+}
+
+#kleur {
+	background-color: white;
+	height: 4rem;
+	margin-top: 3rem;
+}
+
+#kleur1 {
+	background-color: white;
+	height: 1rem;
+	margin-top: 3rem;
+}
+
+.row-padding, .col {
+	padding: 0 1rem;
+}
+
+.col {
+	float: left;
+	width: 50%;
+}
+
+.containertext, .containertext1, .containertext2 {
+	padding: 1rem 2rem;
+	font-family: Lato;
+	font-size: 1rem;
+	line-height: 1.6;
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+}
+
+.containertext4 {
+	padding: 1rem 2rem;
+	font-family: Lato;
+	font-size: 1rem;
+	line-height: 1.6;
+	padding-top: 3rem;
+}
+
+.containertext3 {
+	padding: 1rem 2rem;
+	font-family: Lato;
+	font-size: 1rem;
+	line-height: 1.6;
+	margin-top: -2rem;
+}
+
+.bottom {
+	margin-bottom: 2rem;
+}
+
+#geld {
+	margin-top: 3rem;
+	font-family: Lato;
+	width: 100%;
+}
+
+#attest, #wie {
+	margin-top: 3rem;
+	font-family: Lato;
+	width: 100%;
+}
+
+#pers, #pers1 {
+	width: 20%;
+}
+
+#pers img {
+	margin-bottom: -8rem;
+}
+
+#pers1 img {
+	margin-bottom: -1rem;
+}
+
+#geld td, #geld th {
+	border: 1px solid #ddd;
+	padding: 1rem;
+	line-height: 1.6;
+}
+
+#attest td, #attest th, #wie td, #wie th {
+	border: 1px solid #ddd;
+	padding: 1rem;
+	line-height: 1.6;
+}
+
+#attest th, #wie th {
+	text-align: center;
+	background-color: rgb(136,195,23);
+	color: white;
+}
+
+#geld tr:nth-child(even), #attest tr:nth-child(even), #wie tr:nth-child(even){
+	background-color: #f2f2f2;
+}
+
+#geld th {
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	text-align: left;
+	background-color: rgb(136,195,23);
+	color: white;
+}
+
+.quotes, .quotes1, .quotes2, .quotepanel, .quotepanel1, .quotepanel2 {
+	padding: 1rem 1.6rem;
+	margin-bottom: -3rem;
+}
+
+.quotepanel6, .quotepanel7, .quotepanel8, .quotepanel10, .quotepanel11 {
+	margin-top: 3rem;
+	padding: 1rem 1.6rem;
+} 
+
+.quotes3, .quotepanel3, .quotes9, .quotepanel9 {
+	margin-top: 3rem;
+	padding: 1rem 1.6rem;
+	margin-bottom: -2rem;
+}
+
+.quotes5, .quotepanel5 {
+	padding: 1rem 1.6rem;
+}
+
+.quotes, .quotes1, .quotes2, .quotes3, .quotes5, .quotes6, .quotes7, .quotes8, .quotes9, .quotes10, .quotes11 {
+	margin-top: -2rem;
+}
+
+.quotepanel, .quotepanel1, .quotepanel2, .quotepanel3, .quotepanel5, .quotepanel6, .quotepanel7, .quotepanel8, .quotepanel9, .quotepanel10, .quotepanel11 {
+	margin-bottom: 1rem;
+}
+
+.quotegrey, .quotegrey1, .quotegrey2, .quotegrey3, .quotegrey5, .quotegrey6, .quotegrey7, .quotegrey8, .quotegrey9, .quotegrey10, .quotegrey11 {
+	color: white;
+	background-color: rgb(136,195,23);
+	border-radius: 8px;
+}
+
+.quotexlarge, .quotexlarge1, .quotexlarge2, .quotexlarge3, .quotexlarge5, .quotexlarge6, .quotexlarge7, .quotexlarge8, .quotexlarge9, .quotexlarge10, .quotexlarge11 {
+	margin-top: -4rem;
+	line-height: 1.6;
+	font-family: Lato;
+	font-size: 1.5rem;
+	font-style: italic;
+}
+
+.quotexlarge4 {
+	line-height: 1.6;
+	font-family: Lato;
+	font-size: 1.5rem;
+	font-style: italic;
+}
+
+#dubbel, #dubbel1, #dubbel2, #dubbel3, #dubbel5, #dubbel6, #dubbel7, #dubbel8, #dubbel9, #dubbel10, #dubbel11 {
+	font-size: 150px;
+	line-height: 0.6em;
+	opacity:0.2;
+}
+
+#tennis {
+	color: black;
+}
+
+#regels {
+	margin: 3rem 0 0 3rem;
+}
+
+.carousel-inner img {
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.carousel-inner {
+	margin-top: 3rem;
+}
+
+.rij {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	padding: 0 4px;
+}
+
+.kolom {
+	-ms-flex: 100%;
+	flex: 100%;
+	max-width: 100%;
+	padding: 0 4px;
+}
+
+.kolom img {
+	margin-top: 8px;
+	vertical-align: middle;
+	width: 100%;
+}
+
+.month {
+	margin-top: 3rem;
+	padding: 7rem 1rem;
+	width: 100%;
+	background: rgb(136,195,23);
+	text-align: center;
+}
+
+.month ul li {
+	font-family: Lato;
+	color: white;
+	font-size: 2rem;
+	text-transform: uppercase;
+	letter-spacing: 0.3rem;
+}
+
+.month .prev {
+	margin: 2rem 0 0 -1rem;
+	float: left;
+	padding-top: 1rem;
+}
+
+.month .next {
+	margin-top: 2rem;
+	float: right;
+	padding-top: 1rem;
+}
+
+.weekdays {
+	margin: 0;
+	padding: 1rem 0;
+	background-color: #ddd;
+}
+
+.weekdays li {
+	font-family: Lato;
+	display: inline-block;
+	width: 13.6%;
+	color: #666;
+	text-align: center;
+	font-size: 1.5rem;
+}
+
+.days {
+	padding: 1rem 0;
+	background: #eee;
+	margin: 0;
+}
+
+.days li {
+	font-family: Lato;
+	display: inline-block;
+	width: 13.6%;
+	text-align: center;
+	margin: 1rem 0 1rem 0;
+	font-size: 1.5rem;
+	color: #777;
+}
+
+.days li .active {
+	padding: 0.5rem;
+	background: rgb(136,195,23);
+	color: white;
+}
+
+@supports (grid-area: auto) {
+	@media screen and (min-width: 910px) {
+		body {
+			background-image: url("img/bgi.jpg");
+			height: 100%;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+
+		.content {
+			max-width: 600px;
+			margin: auto;
+			background: white;
+			padding: 10px;
+		}
+
+		.content1 {
+			max-width: 600px;
+			margin: auto;
+			height: 766px;
+			background: white;
+			padding: 10px;
+		}
+
+		#logo {
+			width: 15%;
+			margin: -4rem 0 0 49rem;
+		}
+
+		#center {
+			top: 3rem;
+			width: 7%;
+		}
+
+		#centertext {
+			top: 8rem;
+			font-size: 2rem;
+		}
+
+		#knop {
+			top: 12rem;
+			padding: 1rem;
+		}
+
+		#knop a {
+			font-size: 1rem;
+		}
+
+		.column {
+			width: 30%;
+			margin-left: 1.5rem;
+		}
+
+		.gallery img {
+			width: 100%;
+		}
+
+		.desc {
+			padding: 1rem;
+		}
+
+		#vlak {
+			height: 34rem;
+		}
+
+		#regels {
+			margin-left: 7rem;
+		}
+
+		#vl {
+			margin-top: 27rem;
+		}
+
+		.carousel-inner img {
+			width: 30%;
+			margin-left: 17rem;
+		}
+
+		.right {
+			margin-right: 17rem;
+		}
+
+		.kolom {
+			-ms-flex: 50%;
+			flex: 50%;
+			max-width: 50%;
+		}
+
+		#column9 {
+			margin-top: 7rem;
+		}
+
+		#column2, #column11 {
+			margin-top: 4rem;
+		}
+
+		#column8 {
+			margin-top: 6rem;
+		}
+	}
+	@media screen and (min-width: 1440px) {
+		.content {
+			max-width: 1000px;
+		}
+
+		.content1 {
+			max-width: 1000px;
+			height: 766px;
+		}
+
+		.sidenav {
+			left: 21rem;
+		}
+
+		#logo {
+			width: 12%;
+			margin-left: 85rem;
+		}
+
+		.column {
+			width: 31%;
+			margin-left: 1.5rem;
+			font-size: 1.2rem;
+		}
+
+		#center {
+			top: 6rem;
+		}
+
+		#centertext {
+			top: 13rem;
+			font-size: 2.5rem;
+		}
+
+		#knop {
+			top: 19rem;
+			padding: 1.5rem;
+		}
+
+		#knop a {
+			font-size: 1.5rem;
+		}
+
+		.gallery img {
+			width: 80%;
+		}
+
+		.gallery {
+			width: 80%;
+			margin-left: 9rem;
+			margin-top: 2rem;
+		}
+		
+		.desc {
+			width: 80%;
+			padding: 1rem;
+		}
+
+		#column1, #column2, #column3, #column4, #column5, #column6, #column7, #column8, #column9, #column10, #column11, #column12, #column13 {
+			width: 40rem;
+		}
+
+		#column1, #column2, #column3, #column4, #column5, #column6, #column7, #column14 {
+			margin-left: 45rem;
+		}
+
+		#column8, #column9, #column10, #column11, #column12, #column13 {
+			margin-left: 8rem;
+		}
+
+		#column2, #column9, #column11 {
+			margin-top: 2rem;
+		}
+
+		#klein1, #klein5 {
+			display: none;
+		}
+
+		#klein2 {
+			width: 30rem;
+			float: left;
+			margin: -26rem 0 0 -37rem;
+		}
+
+		#klein6, #klein3, #klein4 {
+			display: none;
+		}
+
+		#klein7 {
+			visibility: visible;
+			width: 30rem;
+			margin: -34rem 0 0 55rem;
+		}
+
+		#klein8 {
+			position: absolute;
+			visibility: visible;
+			width: 30rem;
+			margin: -48rem 0 0 55rem;
+		}
+
+		#klein9 {
+			position: absolute;
+			visibility: visible;
+			width: 25rem;
+			margin: -29rem 0 0 10rem;
+		}
+
+		.row-padding, .col {
+			padding: 0 11rem;
+			margin-top: 0.5rem;
+		}
+
+		.containertext {
+			width: 40%;
+			font-size: 1.2rem;
+			margin: -1rem 0 0 7rem;
+			float: left;
+		}
+
+		.containertext1, .containertext4 {
+			width: 40%;
+			font-size: 1.2rem;
+			margin-left: 7rem;
+		}
+
+		.containertext2 {
+			width: 40%;
+			font-size: 1.2rem;
+			margin-left: 7rem;
+			margin-top: -3rem;
+		}
+
+		.containertext3 {
+			width: 40%;
+			font-size: 1.2rem;
+			margin-left: 7rem;
+		}
+
+		.titels1 {
+			text-align: left;
+			margin-left: 9rem;
+		}
+
+		.titels2 {
+			position: absolute;
+			margin-left: 40rem;
+			margin-top: 35rem;
+		}
+
+		.quotes, .quotepanel {
+			width: 50%;
+			float: right;
+			margin: -16rem 7rem 9rem 0;
+		}
+
+		.quotes1, .quotepanel1 {
+			width: 50%;
+			float: right;
+			margin: -4.5rem 7rem 1rem 0;
+		}
+
+		.quotes2, .quotepanel2 {
+			width: 50%;
+			float: right;
+			margin: -11rem 7rem 9rem 0;
+		}
+
+		.quotes3, .quotepanel3 {
+			position: absolute;
+			width: 50%;
+			margin: 29rem 0 0 25rem;
+		}
+
+		.quotes5, .quotepanel5 {
+			position: absolute;
+			width: 50%;
+			margin: -20rem 0 0 25rem;
+		}
+
+		.quotes6, .quotepanel6 {
+			width: 40%;
+			margin: 1rem 0 0 0;
+		}
+
+		.quotes7, .quotepanel7 {
+			width: 40%;
+			margin: -32rem 0 0 19rem;
+		}
+
+		.quotes8, .quotepanel8 {
+			width: 40%;
+			margin: -32rem 0 0 37rem;
+		}
+
+		.quotes10, .quotepanel10 {
+			width: 35%;
+			margin: -32rem 0 0 13rem;
+		}
+
+		.quotes11, .quotepanel11 {
+			width: 35%;
+			margin: -32rem 0 0 25rem;
+		}
+
+		.quotes9, .quotepanel9 {
+			width: 40%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		.quotepanel, .quotepanel1, .quotepanel2, .quotepanel3, .quotepanel5, .quotepanel6, .quotepanel7, .quotepanel8, .quotepanel9, .quotepanel10, .quotepanel11 {
+			margin-bottom: 0;
+		}
+
+		.quotegrey, .quotegrey1{
+			width: 60%;
+			height: 20rem;
+		}
+
+		.quotegrey2 {
+			width: 60%;
+			height: 17rem;
+		}
+
+		.quotegrey3 {
+			width: 60%;
+			height: 23rem;
+		}
+
+		.quotegrey5 {
+			width: 60%;
+			height: 20rem;
+		}
+
+		.quotegrey6, .quotegrey7, .quotegrey10, .quotegrey11 {
+			width: 60%;
+			height: 32rem;
+		}
+
+		.quotegrey8 {
+			width: 60%;
+			height: 33rem;
+		}
+
+		.quotegrey9 {
+			width: 60%;
+			height: 15rem;
+		}
+
+		.quotexlarge, .quotexlarge2, .quotexlarge3, .quotexlarge5, .quotexlarge9 {
+			font-size: 1.2rem;
+			margin-top: -3rem;
+		}
+
+		.quotexlarge1 {
+			font-size: 1.2rem;
+			margin-top: -1rem;
+		}
+
+		.quotexlarge4 {
+			font-size: 1.2rem;
+		}
+
+		.quotexlarge6, .quotexlarge7, .quotexlarge8, .quotexlarge10, .quotexlarge11 {
+			font-size: 1.5rem;
+			margin-top: -2rem;
+		}
+
+		#pers img {
+			margin-bottom: -5rem;
+		}
+
+		#regels {
+			margin-left: 26rem;
+		}
+
+		#vl {
+			display: none;
+		}
+
+		#wie {
+			margin-top: 40rem;
+		}
+
+		.carousel-inner img {
+			width: 30%;
+			margin-left: 29rem;
+		}
+
+		.carousel-inner {
+			margin-top: 1rem;
+		}
+
+		.right {
+			margin-right: 18rem;
+		}
+	}
+}
